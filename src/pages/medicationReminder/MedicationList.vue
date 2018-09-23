@@ -25,7 +25,7 @@ export default {
           posology: '1 capsula a cada 12 horas',
           nextDoseTime: '18h00',
           remainDoses: 6,
-          remainDosesPercentage: 30
+          remainDosesPercentage: 10
         }
       ]
     }
