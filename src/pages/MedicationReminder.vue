@@ -5,20 +5,15 @@
       <transition name="slide">
         <router-view></router-view>
       </transition>
-      <router-link to="/list" class="button-on-list">
-        <call-to-action text="Adicionar Medicação"></call-to-action>
-      </router-link>
     </div>
   </div>
 </template>
 
 <script>
-import CallToAction from '../components/CallToAction'
 import TitleBar from '../components/TitleBar'
 export default {
   name: 'MedicationReminder',
   components: {
-    CallToAction,
     TitleBar
   }
 }
@@ -34,16 +29,13 @@ export default {
   overflow-y: scroll;
   height: calc(100% - 143.5px - 56px);
   background-color: #eee;
-  display: flex;
-  flex-direction: column;
 }
 .title-bar+.container {
   padding-top: 143.5px + $space-2x;
 }
-.button-on-list {
-  margin-top: auto;
-}
-[class*='router-link'] {
-  text-decoration: none;
-}
+</style>
+<style>
+  [class*='router-link'], a {
+    text-decoration: none;
+  }
 </style>

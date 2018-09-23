@@ -1,6 +1,6 @@
 <template>
   <header class="title-bar">
-    <span class="back-btn"></span>
+    <span class="back-btn" @click="goBack"></span>
     <div class="title">{{titleText}}</div>
   </header>
 </template>
@@ -10,14 +10,18 @@ export default {
   name: 'TitleBar',
   props: {
     titleText: String
+  },
+  methods: {
+    goBack () {
+      window.history.length > 1
+        ? this.$router.go(-1)
+        : this.$router.push('/')
+    }
   }
 }
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scoped>
-//$dark-bg: #2E3192;
-//$text-color-on-dark: #FFFFFF;
-//$accent-color: #8DC63F;
 .title-bar {
   background-color: $dark-bg;
   padding: 39px 28px 28px;
