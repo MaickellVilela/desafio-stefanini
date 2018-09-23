@@ -21,6 +21,13 @@ export default {
 .title-bar {
   background-color: $dark-bg;
   padding: 39px 28px 28px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
   .back-btn {
     background-image: url('../assets/back-btn.svg');
     width: 12px;
@@ -31,7 +38,6 @@ export default {
     color: $text-color-on-dark;
     font-weight: bold;
     font-size: 18px;
-
     position: relative;
     padding-bottom: 10px;
     margin-top: 28px;

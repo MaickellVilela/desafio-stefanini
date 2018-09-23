@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-container">
     <title-bar title-text="Lembrete de Medicação"></title-bar>
     <div class="container">
       <transition name="slide">
@@ -25,7 +25,15 @@ export default {
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scoped>
+.page-container {
+  height: 100%;
+  overflow-y: scroll;
+}
 .container {
   padding: $space-2x;
+  overflow-y: scroll;
+}
+.title-bar+.container {
+  padding-top: 143.5px + $space-2x;
 }
 </style>

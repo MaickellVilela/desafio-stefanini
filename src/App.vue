@@ -3,6 +3,7 @@
     <div class="device-frame">
       <router-view/>
     </div>
+    <div class="device"></div>
   </div>
 </template>
 
@@ -34,22 +35,22 @@ html, body {
   height: 812px;
   width: 375px;
   background-color: #fff;
-  //border: solid 5px red;
   border-radius: 36px;
-  &::before {
-    pointer-events: none;
-    position: absolute;
-    content: '';
-    display: block;
-    background-image: url('./assets/iPhoneFrame.png');
-    width: 432px;
-    left: -29px;
-    top: -26px;
-    height: 1266px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain;
-
-  }
+  overflow-y: hidden;
+}
+.device {
+  content: '';
+  display: block;
+  width: 432px;
+  height: 886px;
+  position: absolute;
+  top: calc(50% + 10px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('./assets/iPhoneFrame.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  pointer-events: none;
 }
 </style>
