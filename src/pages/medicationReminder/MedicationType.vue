@@ -1,18 +1,16 @@
 <template>
 <div class="container medication-type-form">
-  <div class="text-field">
-    <label for="name">Nome do medicamento</label>
-    <input type="text" id="name">
-  </div>
+  <text-field/>
   <box-picker/>
 </div>
 </template>
 <script>
-import BoxPicker from './BoxPicker'
+  import BoxPicker from './BoxPicker'
+  import TextField from './TextField'
 
-export default {
+  export default {
   name: 'MedicationType',
-  components: {BoxPicker}
+  components: {TextField, BoxPicker}
 }
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>

@@ -1,13 +1,11 @@
 <template>
   <div class="box-picker">
-    <!--<template >-->
-      <div class="box-picker__item" v-for="type in types" :key="type.id">
-        <div class="radio-wrap">
-          <input type="radio" :id="type.id" name="medication-type" class="box-picker__input">
-          <label :for="type.id" class="box-picker__label">{{type.name}}</label>
-        </div>
+    <div class="box-picker__item" v-for="type in types" :key="type.id">
+      <div class="radio-wrap">
+        <input type="radio" :id="type.id" name="medication-type" class="box-picker__input">
+        <label :for="type.id" class="box-picker__label">{{type.name}}</label>
       </div>
-    <!--</template>-->
+    </div>
   </div>
 </template>
 <script>
