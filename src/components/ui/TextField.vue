@@ -13,14 +13,7 @@ export default {
 .text-field {
   margin-bottom: $space-2x;
   &__label {
-    display: block;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 18px;
-    color: #FFFFFF;
-    margin-bottom: 7px;
+    @extend %form-field-label;
   }
   &__input {
     display: block;

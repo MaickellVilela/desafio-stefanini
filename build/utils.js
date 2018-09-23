@@ -44,7 +44,10 @@ exports.cssLoaders = function (options) {
         loaders.push({
           loader: 'sass-resources-loader',
           options: {
-            resources: path.resolve(__dirname, '../src/styles/variables.scss'),
+            resources: [
+              path.resolve(__dirname, '../src/styles/variables.scss'),
+              path.resolve(__dirname, '../src/styles/mixins.scss'),
+            ]
           },
         })
       }
