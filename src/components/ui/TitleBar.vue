@@ -33,7 +33,7 @@ export default {
   box-sizing: border-box;
   z-index: 2;
   .back-btn {
-    background-image: url('../assets/back-btn.svg');
+    background-image: url('../../assets/back-btn.svg');
     width: 12px;
     height: 21px;
     display: block;

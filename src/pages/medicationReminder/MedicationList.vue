@@ -8,7 +8,7 @@
 </template>
 <script>
 import MedicationCard from '@/components/business/MedicationCard'
-import CallToAction from '@/components/CallToAction'
+import CallToAction from '@/components/ui/CallToAction'
 
 export default {
   name: 'MedicationList',
@@ -32,6 +32,41 @@ export default {
           nextDoseTime: '18h00',
           remainDoses: 6,
           remainDosesPercentage: 10
+        },
+        {
+          name: 'Predinizona 500mg',
+          posology: '1 capsula a cada 12 horas',
+          nextDoseTime: '18h00',
+          remainDoses: 6,
+          remainDosesPercentage: 10
+        },
+        {
+          name: 'Predinizona 500mg',
+          posology: '1 capsula a cada 12 horas',
+          nextDoseTime: '18h00',
+          remainDoses: 6,
+          remainDosesPercentage: 10
+        },
+        {
+          name: 'Predinizona 500mg',
+          posology: '1 capsula a cada 12 horas',
+          nextDoseTime: '18h00',
+          remainDoses: 6,
+          remainDosesPercentage: 10
+        },
+        {
+          name: 'Predinizona 500mg',
+          posology: '1 capsula a cada 12 horas',
+          nextDoseTime: '18h00',
+          remainDoses: 6,
+          remainDosesPercentage: 10
+        },
+        {
+          name: 'Predinizona 500mg',
+          posology: '1 capsula a cada 12 horas',
+          nextDoseTime: '18h00',
+          remainDoses: 6,
+          remainDosesPercentage: 10
         }
       ]
     }
@@ -40,11 +75,16 @@ export default {
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
 .medication-list {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  height: calc(100% - #{$header-height} - (#{$space-2x * 2 }));
+  padding-bottom: 46px + $space-2x;
 }
 .button-on-list {
-  margin-top: auto;
+  position: fixed;
+  bottom: $space-2x;
+  left: $space-2x;
+  width: calc(100% - (#{$space-2x * 2 }));
+  > * {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+  }
 }
 </style>

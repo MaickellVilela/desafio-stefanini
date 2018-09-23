@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import TitleBar from '../components/TitleBar'
+import TitleBar from '@/components/ui/TitleBar'
 export default {
   name: 'MedicationReminder',
   components: {
@@ -21,7 +21,7 @@ export default {
   overflow-y: scroll;
 }
 .title-bar+.container {
-  padding-top: 143.5px + $space-2x;
+  padding-top: $header-height + $space-2x;
 }
 </style>
 <style lang="scss" rel="stylesheet/scss">
@@ -31,7 +31,7 @@ export default {
 .container {
   padding: $space-2x;
   overflow-y: scroll;
-  height: calc(100% - 143.5px - 56px);
+  height: calc(100% - #{$header-height} - 56px);
   background-color: #eee;
 }
 </style>

@@ -68,6 +68,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-left: -$space-base;
+    margin-bottom: $space-base;
     &__label {
       @extend %form-field-label;
       width: 100%;
