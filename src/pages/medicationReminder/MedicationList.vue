@@ -1,10 +1,10 @@
 <template>
-    <div class="medication-list">
-      <medication-card v-for="med in medications" :key="med.id" :data="med"/>
-      <router-link to="/add" class="button-on-list">
-        <call-to-action text="Adicionar Medicação"></call-to-action>
-      </router-link>
-    </div>
+  <div class="container medication-list">
+    <medication-card v-for="med in medications" :key="med.id" :data="med"/>
+    <router-link to="/add" class="button-on-list">
+      <call-to-action text="Adicionar Medicação"></call-to-action>
+    </router-link>
+  </div>
 </template>
 <script>
 import MedicationCard from '@/components/business/MedicationCard'
