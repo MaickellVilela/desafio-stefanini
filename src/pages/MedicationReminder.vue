@@ -6,12 +6,8 @@
 </template>
 
 <script>
-import TitleBar from '@/components/ui/TitleBar'
 export default {
-  name: 'MedicationReminder',
-  components: {
-    TitleBar
-  }
+  name: 'MedicationReminder'
 }
 </script>
 

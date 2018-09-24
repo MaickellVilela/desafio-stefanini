@@ -8,13 +8,11 @@
 </template>
 <script>
 import MedicationCard from '@/components/business/MedicationCard'
-import CallToAction from '@/components/ui/CallToAction'
 
 export default {
   name: 'MedicationList',
   components: {
-    MedicationCard,
-    CallToAction
+    MedicationCard
   },
   data: function () {
     return {

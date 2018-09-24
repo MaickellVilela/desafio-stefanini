@@ -13,7 +13,6 @@ export default {
 
 <style lang="scss" rel="stylesheet/scss" scoped>
 button {
-  //-webkit-appearance: none;
   cursor: pointer;
   background-color: $accent-color;
   color: $button-text-color;

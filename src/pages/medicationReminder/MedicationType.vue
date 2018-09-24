@@ -3,16 +3,12 @@
   <text-field/>
   <box-picker/>
   <checkbox/>
+  <call-to-action text="Adicionar Medicação"></call-to-action>
 </div>
 </template>
 <script>
-import BoxPicker from '@/components/ui/BoxPicker'
-import TextField from '@/components/ui/TextField'
-import Checkbox from './Checkbox'
-
 export default {
-  name: 'MedicationType',
-  components: {Checkbox, TextField, BoxPicker}
+  name: 'MedicationType'
 }
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>

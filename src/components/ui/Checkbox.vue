@@ -18,6 +18,7 @@ export default {
 <style lang="scss" rel="stylesheet/scss" scoped>
 .checkbox {
   display: flex;
+  margin-bottom: $space-2x;
   &__input {
     -webkit-appearance: none;
     width: 25px;
