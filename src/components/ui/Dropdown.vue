@@ -1,10 +1,10 @@
 <template>
-  <div class="dropdown">
-    <span @click="toggleMenu()" class="dropdown-toggle">
+  <div class="dropdown" @click="toggleMenu()">
+    <span class="dropdown-toggle">
       {{ selectedOption.name !== undefined ? selectedOption.name : options[0].name }}
     </span>
     <ul class="dropdown-menu" v-if="showMenu">
-      <li v-for="option in options">
+      <li v-for="option in options" :key="option.id">
         <a href="javascript:void(0)" @click="updateOption(option)">
           {{ option.name }}
         </a>
@@ -39,8 +39,8 @@ export default {
       this.selectedOption = option
       this.showMenu = false
       this.$emit('updateOption', this.selectedOption)
+      this.toggleMenu()
     },
-
     toggleMenu () {
       this.showMenu = !this.showMenu
     }
@@ -61,27 +61,25 @@ $drpdown-min-size: 44px;
     border-radius: 5px;
     padding-left: 7px;
     padding-right: 7px;
+    cursor: pointer;
+    margin-right: $space-base;
+    margin-bottom: $space-base;
+    a {
+      text-decoration: none;
+    }
   }
-  .dropdown a:hover {
-    text-decoration: none;
-  }
-
   .dropdown-toggle {
     color: #fff;
     box-sizing: border-box;
-    line-height: 38px;
+    line-height: 36px;
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 32px;
     color: #FFFFFF;
     text-align: center;
     display: block;
   }
-  .dropdown-toggle:hover {
-    cursor: pointer;
-  }
-
   .dropdown-menu {
     position: absolute;
     top: 100%;

@@ -3,7 +3,24 @@
     <div class="natural-language-form">
       <span class="natural-language-form__text">Tomar</span>
       <span class="natural-language-form__input-wrap">
-        <dropdown :options="arrayOfObjects" :selected="object"></dropdown>
+        <dropdown :options="quantity" :selected="quantity"></dropdown>
+      </span>
+      <span class="natural-language-form__input-wrap">
+        <dropdown :options="unit" :selected="unit"></dropdown>
+      </span>
+      <span class="natural-language-form__text">a cada</span>
+      <span class="natural-language-form__input-wrap">
+        <dropdown :options="timeAmount" :selected="timeAmount"></dropdown>
+      </span>
+      <span class="natural-language-form__input-wrap">
+        <dropdown :options="timeUnit" :selected="timeUnit"></dropdown>
+      </span>
+      <span class="natural-language-form__text">durante</span>
+      <span class="natural-language-form__input-wrap">
+        <dropdown :options="timeAmount" :selected="timeAmount"></dropdown>
+      </span>
+      <span class="natural-language-form__input-wrap">
+        <dropdown :options="timeUnit" :selected="timeUnit"></dropdown>
       </span>
     </div>
   </div>
@@ -13,14 +30,28 @@ export default {
   name: 'Posology',
   data: function () {
     return {
-      arrayOfObjects: [
+      quantity: [
         {name: '1', id: 1},
         {name: '2', id: 2},
         {name: '3', id: 3}
       ],
-      object: {
-        name: '1'
-      }
+      unit: [
+        {name: 'ml', id: 1},
+        {name: 'colher', id: 2},
+        {name: 'frasco', id: 3}
+      ],
+      timeAmount: [
+        {name: '1', id: 1},
+        {name: '2', id: 2},
+        {name: '3', id: 3}
+      ],
+      timeUnit: [
+        {name: 'minute', id: 1},
+        {name: 'hour', id: 2},
+        {name: 'day', id: 3},
+        {name: 'week', id: 4},
+        {name: 'month', id: 5}
+      ]
     }
   }
 }
