@@ -4,9 +4,7 @@
     <span class="checkbox__tick"></span>
     <span class="checkbox__label-wrap">
       <label for="uso-continuo" class="checkbox__label">Uso Contínuo</label>
-      <span class="checkbox__help-text">
-        Marque esta opção se o médico receitou o uso deste medicamento por tempo indeterminado.
-      </span>
+      <help-text>Marque esta opção se o médico receitou o uso deste medicamento por tempo indeterminado.</help-text>
     </span>
   </div>
 </template>
@@ -56,15 +54,6 @@ export default {
   }
   &__label-wrap {
     margin-left: $space-base;
-  }
-  &__help-text {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    color: rgba($text-color-on-dark, 0.6);
   }
 }
 </style>

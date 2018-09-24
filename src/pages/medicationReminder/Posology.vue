@@ -23,6 +23,7 @@
         <dropdown :options="timeUnit" :selected="timeUnit"></dropdown>
       </span>
     </div>
+    <help-text>Toque no texto contornado para alterar</help-text>
   </div>
 </template>
 <script>
@@ -68,9 +69,6 @@ export default {
     font-size: 32px;
     color: $text-color-on-dark;
     margin-right: $space-base;
-  }
-  &__input-wrap {
-
   }
 }
 </style>
