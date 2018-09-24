@@ -1,18 +1,19 @@
 <template>
-<button>{{text}}</button>
+<router-link :to="to" class="cta-button">{{text}}</router-link>
 </template>
 
 <script>
 export default {
-  name: 'CallToAction',
+  name: 'ActionButton',
   props: {
-    text: String
+    text: String,
+    to: String
   }
 }
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scoped>
-button {
+.cta-button {
   cursor: pointer;
   background-color: $accent-color;
   color: $button-text-color;
@@ -24,5 +25,7 @@ button {
   width: 100%;
   display: block;
   text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
 }
 </style>

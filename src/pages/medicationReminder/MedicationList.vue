@@ -1,9 +1,7 @@
 <template>
   <div class="container medication-list">
     <medication-card v-for="med in medications" :key="med.id" :data="med"/>
-    <router-link to="/add" class="button-on-list">
-      <call-to-action text="Adicionar Medicação"></call-to-action>
-    </router-link>
+    <action-button class="button-on-list" text="Adicionar Medicação" to="/add"></action-button>
   </div>
 </template>
 <script>

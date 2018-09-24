@@ -3,7 +3,7 @@
   <text-field/>
   <box-picker/>
   <checkbox/>
-  <call-to-action text="Adicionar Medicação"></call-to-action>
+  <action-button text="Próximo" to="/posology"></action-button>
 </div>
 </template>
 <script>
