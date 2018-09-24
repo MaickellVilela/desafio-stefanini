@@ -1,5 +1,5 @@
 <template>
-  <div class="dropdown" @click="toggleMenu()">
+  <div class="dropdown" v-click-outside="hide" @click="toggleMenu()">
     <span class="dropdown-toggle">
       {{ selectedOption.name !== undefined ? selectedOption.name : options[0].name }}
     </span>
@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import ClickOutside from 'vue-click-outside'
 export default {
   data () {
     return {
@@ -29,11 +30,10 @@ export default {
     },
     selected: {}
   },
-
   mounted () {
     this.selectedOption = this.selected
+    this.popupItem = this.$el
   },
-
   methods: {
     updateOption (option) {
       this.selectedOption = option
@@ -43,7 +43,13 @@ export default {
     },
     toggleMenu () {
       this.showMenu = !this.showMenu
+    },
+    hide () {
+      this.showMenu = false
     }
+  },
+  directives: {
+    ClickOutside
   }
 }
 </script>
