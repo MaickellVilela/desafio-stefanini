@@ -16,9 +16,6 @@ export default {
   height: 100%;
   overflow-y: scroll;
 }
-.title-bar+.container {
-  padding-top: $header-height + $space-2x;
-}
 </style>
 <style lang="scss" rel="stylesheet/scss">
 [class*='router-link'], a {

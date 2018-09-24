@@ -24,6 +24,9 @@
       </span>
     </div>
     <help-text>Toque no texto contornado para alterar</help-text>
+    <div class="fixed-bottom-button">
+      <action-button to="/add/nextDose" text="Próximo"></action-button>
+    </div>
   </div>
 </template>
 <script>
@@ -34,7 +37,8 @@ export default {
       quantity: [
         {name: '1', id: 1},
         {name: '2', id: 2},
-        {name: '3', id: 3}
+        {name: '3', id: 3},
+        {name: '...', id: 4}
       ],
       unit: [
         {name: 'ml', id: 1},
@@ -44,14 +48,15 @@ export default {
       timeAmount: [
         {name: '1', id: 1},
         {name: '2', id: 2},
-        {name: '3', id: 3}
+        {name: '3', id: 3},
+        {name: '...', id: 4}
       ],
       timeUnit: [
-        {name: 'minute', id: 1},
-        {name: 'hour', id: 2},
-        {name: 'day', id: 3},
-        {name: 'week', id: 4},
-        {name: 'month', id: 5}
+        {name: 'minuto', id: 1},
+        {name: 'hora', id: 2},
+        {name: 'dia', id: 3},
+        {name: 'semana', id: 4},
+        {name: 'mês', id: 5}
       ]
     }
   }
@@ -70,5 +75,11 @@ export default {
     color: $text-color-on-dark;
     margin-right: $space-base;
   }
+}
+.fixed-bottom-button {
+  position: fixed;
+  bottom: $space-2x;
+  left: $space-2x;
+  width: calc(100% - (#{$space-2x * 2 }));
 }
 </style>

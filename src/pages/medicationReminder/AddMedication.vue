@@ -11,7 +11,7 @@ export default {
 <style lang="scss" rel="stylesheet/scss">
   .title-bar+.container {
      background-color: $dark-bg;
-     padding-top: $header-height !important;
+     padding-top: $header-height;
      height: calc(100% - #{$header-height} - #{$space-2x});
      box-sizing: padding-box;
   }

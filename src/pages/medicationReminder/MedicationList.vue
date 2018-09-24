@@ -71,6 +71,8 @@ export default {
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
 .medication-list {
+  padding-top: $header-height + $space-2x;
+  background-color: #eee;
   height: calc(100% - #{$header-height} - (#{$space-2x * 2 }));
   padding-bottom: 46px + $space-2x;
 }
@@ -79,8 +81,6 @@ export default {
   bottom: $space-2x;
   left: $space-2x;
   width: calc(100% - (#{$space-2x * 2 }));
-  > * {
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
-  }
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
 }
 </style>
