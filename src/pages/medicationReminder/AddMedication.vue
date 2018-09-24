@@ -8,6 +8,11 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" rel="stylesheet/scss">
+  .title-bar+.container {
+     background-color: $dark-bg;
+     padding-top: $header-height !important;
+     height: calc(100% - #{$header-height} - #{$space-2x});
+     box-sizing: padding-box;
+  }
 </style>
