@@ -22,6 +22,10 @@
   @include base-font($font-weight: bold);
 }
 
+%typo-input-value {
+  @include base-font();
+}
+
 .typo-help-text {
   @include base-font($font-size: 14px, $font-weight: 300, $opacity: 0.6);
 }

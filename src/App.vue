@@ -19,8 +19,10 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 html, body {
   height: 100%;
-  //background-color: lime;//#0e1a39;
   background: linear-gradient(to bottom, hsl(0, 0, 0) 0%, hsl(0, 0, 20) 100%);
+}
+*, :active, :focus, :hover {
+  outline: 0!important;
 }
 #app {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;

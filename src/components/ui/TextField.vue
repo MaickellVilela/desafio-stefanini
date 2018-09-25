@@ -24,20 +24,14 @@ export default {
   }
   &__input {
     display: block;
+    box-sizing: border-box;
     height: 44px;
     width: 100%;
     padding: $space-base/2 $space-base;
     border: solid 1px rgba($text-color-on-dark, 0.6);
     border-radius: 5px;
     background-color: transparent;
-    box-sizing: border-box;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 18px;
-    color: #FFFFFF;
-    outline: none !important;
+    @extend %typo-input-value;
   }
   &--disabled & {
     &__label {
