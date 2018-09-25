@@ -10,12 +10,7 @@ export default {
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
 .help-text {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    font-size: 14px;
+    @extend .typo-help-text;
     letter-spacing: 0.1em;
-    color: rgba($text-color-on-dark, 0.6);
 }
 </style>

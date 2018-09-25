@@ -21,3 +21,7 @@
 .typo-label {
   @include base-font($font-weight: bold);
 }
+
+.typo-help-text {
+  @include base-font($font-size: 14px, $font-weight: 300, $opacity: 0.6);
+}
