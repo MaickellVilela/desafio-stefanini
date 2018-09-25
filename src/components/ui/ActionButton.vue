@@ -22,7 +22,7 @@ export default {
   width: 100%;
   background-color: $accent-color;
   color: $button-text-color;
-  @extend .label;
+  @extend .typo-label;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
