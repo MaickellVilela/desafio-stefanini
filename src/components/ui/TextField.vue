@@ -24,31 +24,29 @@ export default {
   }
   &__input {
     display: block;
-    background-color: transparent;
-    border: solid 1px rgba($text-color-on-dark, 0.6);
-    border-radius: 5px;
     height: 44px;
     width: 100%;
+    padding: $space-base/2 $space-base;
+    border: solid 1px rgba($text-color-on-dark, 0.6);
+    border-radius: 5px;
+    background-color: transparent;
+    box-sizing: border-box;
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
     font-size: 18px;
     color: #FFFFFF;
-    padding: $space-base/2 $space-base;
     outline: none !important;
-    box-sizing: border-box;
   }
-  &--disabled {
-    .text-field {
-      &__label {
-        opacity: 0.6;
-      }
-      &__input {
-        background: rgba(255, 255, 255, 0.05);
-        border-color: rgba($text-color-on-dark, 0.2);
-        color: rgba($text-color-on-dark, 0.4);
-      }
+  &--disabled & {
+    &__label {
+      opacity: 0.6;
+    }
+    &__input {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba($text-color-on-dark, 0.2);
+      color: rgba($text-color-on-dark, 0.4);
     }
   }
 }

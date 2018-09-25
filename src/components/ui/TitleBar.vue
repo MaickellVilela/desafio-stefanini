@@ -39,12 +39,11 @@ export default {
     display: block;
   }
   .title {
-    color: $text-color-on-dark;
-    font-weight: bold;
-    font-size: 18px;
     position: relative;
     padding-bottom: 10px;
     margin-top: 28px;
+    @extend .label;
+    color: $text-color-on-dark;
     &::after {
       position: absolute;
       content: '';

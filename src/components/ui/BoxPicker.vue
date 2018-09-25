@@ -89,10 +89,10 @@ export default {
         font-weight: bold;
         line-height: normal;
         font-size: 12px;
+        text-transform: capitalize;
         text-align: center;
         letter-spacing: 0.01em;
         color: #FFFFFF;
-        text-transform: capitalize;
         z-index: 1;
         cursor: pointer;
         &[for] {

@@ -14,18 +14,17 @@ export default {
 
 <style lang="scss" rel="stylesheet/scss" scoped>
 .cta-button {
-  cursor: pointer;
-  background-color: $accent-color;
-  color: $button-text-color;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 12px;
+  box-sizing: border-box;
   border: none;
   border-radius: 5px;
-  width: 100%;
   display: block;
+  padding: 12px;
+  width: 100%;
+  background-color: $accent-color;
+  color: $button-text-color;
+  @extend .label;
   text-decoration: none;
-  box-sizing: border-box;
   text-align: center;
+  cursor: pointer;
 }
 </style>

@@ -1,0 +1,23 @@
+@mixin base-font (
+  $font-style: normal,
+  $font-weight: normal,
+  $line-height: normal,
+  $font-size: $main-font-size,
+  $text-transform: none,
+  $text-align: left,
+  $color: $text-color-on-dark,
+  $opacity: 1
+) {
+  font-family: $main-font-family;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  font-size: calc-rem($font-size);
+  text-transform: $text-transform;
+  text-align: $text-align;
+  color: rgba($color, $opacity);
+}
+
+.label {
+  @include base-font($font-weight: bold);
+}
