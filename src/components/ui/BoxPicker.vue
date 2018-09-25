@@ -54,16 +54,6 @@ export default {
 }
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
-  $type-icons: (
-    comprimido: 'pill',
-    pastilha: 'pastille',
-    spray: 'spray',
-    xarope: 'syrup',
-    pomada: 'ointment',
-    injecao: 'injection',
-    inalacao: 'anesthesia',
-    gotas: 'eyedropper'
-  );
   .box-picker {
     display: flex;
     flex-wrap: wrap;
@@ -84,15 +74,9 @@ export default {
         bottom: 10%;
         left: 0;
         width: 100%;
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: bold;
-        line-height: normal;
-        font-size: 12px;
+        @extend %typo-box-label;
         text-transform: capitalize;
-        text-align: center;
         letter-spacing: 0.01em;
-        color: #FFFFFF;
         z-index: 1;
         cursor: pointer;
         &[for] {

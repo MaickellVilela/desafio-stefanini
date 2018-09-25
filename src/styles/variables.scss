@@ -23,3 +23,15 @@ $label-line-height: normal;
 
 // Header
 $header-height: 143.5px;
+
+// Images
+$type-icons: (
+  comprimido: 'pill',
+  pastilha: 'pastille',
+  spray: 'spray',
+  xarope: 'syrup',
+  pomada: 'ointment',
+  injecao: 'injection',
+  inalacao: 'anesthesia',
+  gotas: 'eyedropper'
+);
