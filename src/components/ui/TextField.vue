@@ -24,11 +24,11 @@ export default {
   }
   &__input {
     display: block;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    border: solid 1px rgba($text-color-on-dark, 0.6);
     border-radius: 5px;
     height: 44px;
     width: 100%;
-    border: none;
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
@@ -45,8 +45,8 @@ export default {
         opacity: 0.6;
       }
       &__input {
-        background-color: transparent;
-        border: solid 1px rgba($text-color-on-dark, 0.1);
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba($text-color-on-dark, 0.2);
         color: rgba($text-color-on-dark, 0.4);
       }
     }
