@@ -76,10 +76,4 @@ export default {
     margin-right: $space-base;
   }
 }
-.fixed-bottom-button {
-  position: fixed;
-  bottom: $space-2x;
-  left: $space-2x;
-  width: calc(100% - (#{$space-2x * 2 }));
-}
 </style>

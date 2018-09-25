@@ -3,14 +3,18 @@
     <input id="uso-continuo" type="checkbox" class="checkbox__input">
     <span class="checkbox__tick"></span>
     <span class="checkbox__label-wrap">
-      <label for="uso-continuo" class="checkbox__label">Uso Contínuo</label>
-      <help-text>Marque esta opção se o médico receitou o uso deste medicamento por tempo indeterminado.</help-text>
+      <label for="uso-continuo" class="checkbox__label">{{labelText}}</label>
+      <help-text>{{helpText}}</help-text>
     </span>
   </div>
 </template>
 <script>
 export default {
-  name: 'checkbox'
+  name: 'checkbox',
+  props: {
+    labelText: String,
+    helpText: String
+  }
 }
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
@@ -19,7 +23,7 @@ export default {
   margin-bottom: $space-2x;
   &__input {
     -webkit-appearance: none;
-    width: 25px;
+    max-width: 25px;
     height: 25px;
     flex: 1 0 25px;
     border: 1px solid #FFFFFF;

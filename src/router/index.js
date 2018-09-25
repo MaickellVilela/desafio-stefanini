@@ -6,7 +6,6 @@ import MedicationType from '@/pages/medicationReminder/MedicationType'
 import AddMedication from '@/pages/medicationReminder/AddMedication'
 import NextDose from '@/pages/medicationReminder/NextDose'
 import Posology from '@/pages/medicationReminder/Posology'
-import RemainingDoses from '@/pages/medicationReminder/RemainingDoses'
 
 Vue.use(Router)
 
@@ -38,10 +37,6 @@ export default new Router({
             {
               path: 'posology',
               component: Posology
-            },
-            {
-              path: 'remainingDoses',
-              component: RemainingDoses
             }
           ]
         }

@@ -27,4 +27,10 @@ export default {
   height: calc(100% - #{$header-height} - 56px);
   background-color: #eee;
 }
+.fixed-bottom-button {
+  position: fixed;
+  bottom: $space-2x;
+  left: $space-2x;
+  width: calc(100% - (#{$space-2x * 2 }));
+}
 </style>
