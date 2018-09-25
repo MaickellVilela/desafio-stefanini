@@ -15,6 +15,7 @@ export default {
 
 <style lang="scss" rel="stylesheet/scss">
 @import "reset-css/sass/_reset.scss";
+@import "animate.css/animate.css";
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 html, body {
   height: 100%;
@@ -34,7 +35,7 @@ html, body {
   transform: translate(-50%, -50%);
   height: 812px;
   width: 375px;
-  background-color: #fff;
+  background-color: $dark-bg;
   border-radius: 36px;
   overflow-y: hidden;
 }

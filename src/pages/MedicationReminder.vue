@@ -1,6 +1,8 @@
 <template>
   <div class="page-container">
-    <title-bar title-text="Lembrete de Medicação"></title-bar>
+    <transition appear appear-active-class="animated slideInDown">
+      <title-bar title-text="Lembrete de Medicação"></title-bar>
+    </transition>
     <router-view></router-view>
   </div>
 </template>
@@ -25,7 +27,11 @@ export default {
   padding: $space-2x;
   overflow-y: scroll;
   height: calc(100% - #{$header-height} - 56px);
-  background-color: #eee;
+}
+.title-bar+.container {
+  background-color: $dark-bg;
+  padding-top: $header-height;
+  height: calc(100% - #{$header-height} - #{$space-2x});
 }
 .fixed-bottom-button {
   position: fixed;

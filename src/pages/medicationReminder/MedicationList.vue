@@ -1,7 +1,12 @@
 <template>
   <div class="container medication-list">
     <medication-card v-for="med in medications" :key="med.id" :data="med"/>
-    <action-button class="button-on-list" text="Adicionar Medicação" to="/add"></action-button>
+    <transition
+      appear
+      appear-active-class="animated slideInUp"
+    >
+      <action-button class="button-on-list" text="Adicionar Medicação" to="/add"></action-button>
+    </transition>
   </div>
 </template>
 <script>
@@ -70,7 +75,7 @@ export default {
 }
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
-  .medication-list {
+  .title-bar+.medication-list {
     padding-top: $header-height + $space-2x;
     height: calc(100% - #{$header-height} - (#{$space-2x * 2 }));
     padding-bottom: 46px + $space-2x;
