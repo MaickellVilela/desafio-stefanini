@@ -9,16 +9,13 @@
   <checkbox label-text="Lembrar-me"
             help-text="Enviaremos uma notificação antes do seu medicamento acabar."></checkbox>
   <div class="fixed-bottom-button">
-    <action-button to="/add/list" text="Finalizar"></action-button>
+    <action-button to="/list" text="Finalizar"></action-button>
   </div>
 </div>
 </template>
 
 <script>
-import Divider from './Divider'
-
 export default {
-  name: 'NextDose',
-  components: {Divider}
+  name: 'NextDose'
 }
 </script>

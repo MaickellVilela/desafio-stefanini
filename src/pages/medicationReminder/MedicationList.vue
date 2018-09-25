@@ -77,11 +77,15 @@ export default {
     background-color: #eee;
   }
 
+  /*
+      Por ser fixo e flutuante sobre a lista, o botão não é afetado pelo paddind do container,
+      por isso é preciso recalcular e forçar o tamanho do botão e posicioná-lo corretamente.
+  */
   .button-on-list {
     position: fixed;
     bottom: $space-2x;
     left: $space-2x;
-    width: calc(100% - (#{$space-2x * 2 }));
+    width: calc(100% - (#{$space-2x * 2 })) !important;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   }
 </style>

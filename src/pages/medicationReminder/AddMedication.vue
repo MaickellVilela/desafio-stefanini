@@ -13,6 +13,5 @@ export default {
      background-color: $dark-bg;
      padding-top: $header-height;
      height: calc(100% - #{$header-height} - #{$space-2x});
-     box-sizing: padding-box;
   }
 </style>
