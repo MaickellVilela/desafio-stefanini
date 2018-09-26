@@ -17,6 +17,8 @@ export default {
 @import "reset-css/sass/_reset.scss";
 @import "animate.css/animate.css";
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css');
+
 html, body {
   height: 100%;
   background: linear-gradient(to bottom, hsl(0, 0, 0) 0%, hsl(0, 0, 20) 100%);

@@ -15,18 +15,12 @@ export default {
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
 .compact-data {
-    &__label {
-        @extend %typo-compact-data-label;
-    }
-    &__value {
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: bold;
-        line-height: normal;
-        font-size: 16px;
-        text-align: right;
-        color: rgba(0, 0, 0, 0.4);
-        margin-left: auto;
-    }
+  &__label {
+    @extend %typo-compact-data-label;
+  }
+  &__value {
+    @extend %typo-compact-data-value;
+    margin-left: auto;
+  }
 }
 </style>
