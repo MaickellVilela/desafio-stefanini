@@ -78,9 +78,9 @@ export default {
   .title-bar+.medication-list {
     box-sizing: border-box;
     height: 100%;
-    padding-bottom: 46px + $space-2x;
+    padding-bottom: $main-font-size + ($button-padding * 2) + $space-2x; // button height
     padding-top: calc(var(--header-height) + #{$space-2x});
-    background-color: #eee;
+    background-color: $cards-background;
   }
 
   /*
@@ -92,6 +92,6 @@ export default {
     width: calc(100% - (#{$space-2x * 2 })) !important;
     bottom: $space-2x;
     left: $space-2x;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: $button-shadow;
   }
 </style>

@@ -17,7 +17,7 @@ export default {
   box-sizing: border-box;
   display: block;
   width: 100%;
-  padding: calc-rem(12px);
+  padding: $button-padding;
   border: none;
   border-radius: $border-radius-small;
   background-color: $accent-color;
