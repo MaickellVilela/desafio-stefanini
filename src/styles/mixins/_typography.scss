@@ -27,6 +27,14 @@
   @include base-font($font-family: $number-font-family, $font-size: 16px, $font-weight: bold, $text-align: right, $color: $text-color-on-light, $opacity: 0.4);
 }
 
+%typo-card-title {
+  @include base-font($font-weight: bold, $color: $text-color-on-light, $opacity: 0.6);
+}
+
+%typo-card-subtitle {
+  @include base-font($font-size: 12px, $color: $text-color-on-light, $opacity: 0.6);
+}
+
 %typo-label {
   @include base-font($font-weight: bold);
 }

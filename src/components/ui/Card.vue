@@ -18,32 +18,22 @@ export default {
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
 .card {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-    padding: 7px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    border-radius: $border-radius-small;
     margin-bottom: $space-base;
+    padding: $space-base/2;
+    background-color: $light-bg;
+    box-shadow: $card-shadow;
+    justify-content: space-between;
     &__header {
-        margin-bottom: 10px;
+        margin-bottom: calc-rem(10px);
     }
     &__title {
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: bold;
-        line-height: normal;
-        font-size: 18px;
-        color: rgba(0, 0, 0, 0.6);
+        @extend %typo-card-title;
     }
     &__subtitle {
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 16px;
-        color: rgba(0, 0, 0, 0.6);
+        @extend %typo-card-subtitle
     }
 }
 </style>
