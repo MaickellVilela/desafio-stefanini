@@ -33,7 +33,6 @@ $checkbox-size: calc-rem(25px);
     margin: 0;
     border: 1px solid #FFFFFF;
     border-radius: $checkbox-border-radius;
-    outline: none;
     &:checked {
       ~ .checkbox__tick {
         opacity: 1;
@@ -41,17 +40,15 @@ $checkbox-size: calc-rem(25px);
     }
   }
   &__tick {
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
     content: '';
     display: block;
+    position: absolute;
     width: calc-rem(28px);
     height: calc-rem(19px);
-    background-image: url(~@/assets/checkbox-tick.svg);
-    background-repeat: no-repeat;
+    pointer-events: none;
     background-size: contain;
-    background-position: top right;
+    background: url(~@/assets/checkbox-tick.svg) no-repeat top right;
+    opacity: 0;
   }
   &__label {
     @extend %form-field-label;
