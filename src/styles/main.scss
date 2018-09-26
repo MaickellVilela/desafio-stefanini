@@ -1,0 +1,29 @@
+
+@import "reset-css/sass/_reset.scss";
+@import "animate.css/animate.css";
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css');
+
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, :active, :focus, :hover {
+  outline: 0!important;
+}
+[class*='router-link'], a {
+  text-decoration: none;
+}
+
+/*
+  Apenas para propósito de apresentação.
+  Já pensou que chato mandar para um
+  diretor avaliar e falar pra ele abrir
+  o inspecionar e entrar no modo mobile?
+*/
+@import "presentation/presentation";

@@ -20,9 +20,6 @@ export default {
 }
 </style>
 <style lang="scss" rel="stylesheet/scss">
-[class*='router-link'], a {
-  text-decoration: none;
-}
 .container {
   padding: $space-2x;
   overflow-y: scroll;

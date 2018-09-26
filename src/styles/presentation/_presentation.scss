@@ -1,0 +1,30 @@
+html, body {
+  background: linear-gradient(to bottom, hsl(0, 0, 0) 0%, hsl(0, 0, 20) 100%);
+}
+.device-frame {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 812px;
+  width: 375px;
+  background-color: $dark-bg;
+  border-radius: 36px;
+  overflow-y: hidden;
+}
+.device {
+  content: '';
+  display: block;
+  width: 432px;
+  height: 886px;
+  position: absolute;
+  top: calc(50% + 10px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('./assets/iPhoneFrame.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  pointer-events: none;
+}
