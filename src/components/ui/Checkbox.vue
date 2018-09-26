@@ -18,20 +18,22 @@ export default {
 }
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
+$checkbox-border-radius: $border-radius-small;
+$checkbox-size: calc-rem(25px);
 .checkbox {
   display: flex;
   margin-bottom: $space-2x;
   &__input {
     -webkit-appearance: none;
-    max-width: 25px;
-    height: 25px;
-    flex: 1 0 25px;
-    border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    border-radius: 5px;
-    margin: 0;
-    outline: none;
     position: relative;
+    max-width: $checkbox-size;
+    height: $checkbox-size;
+    flex: 1 0 $checkbox-size;
+    margin: 0;
+    border: 1px solid #FFFFFF;
+    border-radius: $checkbox-border-radius;
+    outline: none;
     &:checked {
       ~ .checkbox__tick {
         opacity: 1;
@@ -44,8 +46,8 @@ export default {
     position: absolute;
     content: '';
     display: block;
-    width: 28px;
-    height: 19px;
+    width: calc-rem(28px);
+    height: calc-rem(19px);
     background-image: url(~@/assets/checkbox-tick.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -53,7 +55,7 @@ export default {
   }
   &__label {
     @extend %form-field-label;
-    line-height: 25px;
+    line-height: $checkbox-size;
     vertical-align: middle;
   }
   &__label-wrap {
