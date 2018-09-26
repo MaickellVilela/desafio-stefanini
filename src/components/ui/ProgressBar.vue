@@ -22,8 +22,8 @@ export default {
 <style lang="scss" rel="stylesheet/scss" scoped>
 
     %progress-bar {
-        height: 5px;
-        border-radius: 5px;
+        height: calc-rem(5px);
+        border-radius: calc-rem(5px);
         display: block;
     }
 
@@ -36,7 +36,7 @@ export default {
             width: inherit;
             background-color: rgba(0, 0, 0, 0.1);
             position: relative;
-            margin-bottom: 4px;
+            margin-bottom: $space-min;
         }
         &__fill {
             @extend %progress-bar;
