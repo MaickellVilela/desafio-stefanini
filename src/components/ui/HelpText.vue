@@ -10,7 +10,7 @@ export default {
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
 .help-text {
-    @extend .typo-help-text;
+    @extend %typo-help-text;
     letter-spacing: 0.1em;
 }
 </style>

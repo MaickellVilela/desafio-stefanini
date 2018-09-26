@@ -1,5 +1,5 @@
 %form-field-label {
   display: block;
   margin-bottom: $space-base/2;
-  @extend .typo-label;
+  @extend %typo-label;
 }
