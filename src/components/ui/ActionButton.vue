@@ -15,13 +15,12 @@ export default {
 <style lang="scss" rel="stylesheet/scss" scoped>
 .cta-button {
   box-sizing: border-box;
-  border: none;
-  border-radius: 5px;
   display: block;
-  padding: 12px;
   width: 100%;
+  padding: calc-rem(12px);
+  border: none;
+  border-radius: $border-radius-small;
   background-color: $accent-color;
-  color: $button-text-color;
   @extend %typo-label;
   text-decoration: none;
   text-align: center;

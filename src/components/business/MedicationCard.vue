@@ -7,7 +7,6 @@
     </card>
 </template>
 <script>
-
 export default {
   name: 'medication-card',
   props: {
