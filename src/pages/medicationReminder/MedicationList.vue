@@ -26,48 +26,6 @@ export default {
           nextDoseTime: '18h00',
           remainDoses: 6,
           remainDosesPercentage: 30
-        },
-        {
-          name: 'Predinizona 500mg',
-          posology: '1 capsula a cada 12 horas',
-          nextDoseTime: '18h00',
-          remainDoses: 6,
-          remainDosesPercentage: 10
-        },
-        {
-          name: 'Predinizona 500mg',
-          posology: '1 capsula a cada 12 horas',
-          nextDoseTime: '18h00',
-          remainDoses: 6,
-          remainDosesPercentage: 10
-        },
-        {
-          name: 'Predinizona 500mg',
-          posology: '1 capsula a cada 12 horas',
-          nextDoseTime: '18h00',
-          remainDoses: 6,
-          remainDosesPercentage: 10
-        },
-        {
-          name: 'Predinizona 500mg',
-          posology: '1 capsula a cada 12 horas',
-          nextDoseTime: '18h00',
-          remainDoses: 6,
-          remainDosesPercentage: 10
-        },
-        {
-          name: 'Predinizona 500mg',
-          posology: '1 capsula a cada 12 horas',
-          nextDoseTime: '18h00',
-          remainDoses: 6,
-          remainDosesPercentage: 10
-        },
-        {
-          name: 'Predinizona 500mg',
-          posology: '1 capsula a cada 12 horas',
-          nextDoseTime: '18h00',
-          remainDoses: 6,
-          remainDosesPercentage: 10
         }
       ]
     }

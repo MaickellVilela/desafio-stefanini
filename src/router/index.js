@@ -15,7 +15,7 @@ export default new Router({
       path: '/',
       name: 'MedicationReminder',
       component: MedicationReminder,
-      redirect: '/list',
+      redirect: '/add/type',
       children: [
         {
           path: 'list',
