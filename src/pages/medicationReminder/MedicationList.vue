@@ -76,9 +76,10 @@ export default {
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
   .title-bar+.medication-list {
-    padding-top: $header-height + $space-2x;
-    height: calc(100% - #{$header-height} - (#{$space-2x * 2 }));
+    box-sizing: border-box;
+    height: 100%;
     padding-bottom: 46px + $space-2x;
+    padding-top: calc(var(--header-height) + #{$space-2x});
     background-color: #eee;
   }
 
@@ -88,9 +89,9 @@ export default {
   */
   .button-on-list {
     position: fixed;
+    width: calc(100% - (#{$space-2x * 2 })) !important;
     bottom: $space-2x;
     left: $space-2x;
-    width: calc(100% - (#{$space-2x * 2 })) !important;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   }
 </style>

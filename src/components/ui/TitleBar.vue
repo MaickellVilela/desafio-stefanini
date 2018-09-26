@@ -1,5 +1,5 @@
 <template>
-  <header class="title-bar">
+  <header class="title-bar" ref="titleBar">
     <span class="back-btn" @click="goBack"></span>
     <div class="title">{{titleText}}</div>
   </header>
@@ -17,6 +17,11 @@ export default {
         ? this.$router.go(-1)
         : this.$router.push('/')
     }
+  },
+  mounted: function () {
+    let titleBarHeight = this.$refs.titleBar.clientHeight + 'px'
+    document.documentElement.style.setProperty('--header-height', titleBarHeight)
+    console.log(document.documentElement.style.getPropertyValue('--header-height'))
   }
 }
 </script>
@@ -55,4 +60,9 @@ export default {
     }
   }
 }
+</style>
+<style lang="scss" rel="stylesheet/scss">
+  :root {
+    --header-height: 147px; //defaul-fallback
+  }
 </style>
