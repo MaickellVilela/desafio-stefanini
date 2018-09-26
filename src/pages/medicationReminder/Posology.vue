@@ -64,8 +64,7 @@ export default {
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
 .natural-language-form {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   padding-top: $space-2x;
   &__text {
     @extend %typo-natural-language-form;
