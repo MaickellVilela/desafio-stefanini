@@ -18,6 +18,10 @@
   color: rgba($color, $opacity);
 }
 
+%typo-compact-data-label {
+  @include base-font($font-size: 12px, $text-align: right, $color: $text-color-on-light, $opacity: 0.6);
+}
+
 %typo-label {
   @include base-font($font-weight: bold);
 }

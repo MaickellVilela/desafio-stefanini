@@ -16,13 +16,7 @@ export default {
 <style lang="scss" rel="stylesheet/scss" scoped>
 .compact-data {
     &__label {
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 12px;
-        text-align: right;
-        color: rgba(0, 0, 0, 0.6);
+        @extend %typo-compact-data-label;
     }
     &__value {
         font-family: Open Sans;
