@@ -33,3 +33,7 @@
 %typo-box-label {
   @include base-font($font-size: 12px, $font-weight: bold, $text-align: center);
 }
+
+%typo-natural-language-form {
+  @include base-font($font-size: 32px, $line-height: 44px);
+}

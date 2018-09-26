@@ -66,13 +66,9 @@ export default {
 .natural-language-form {
   display: flex;
   flex-wrap: wrap;
+  padding-top: $space-2x;
   &__text {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 44px;
-    font-size: 32px;
-    color: $text-color-on-dark;
+    @extend %typo-natural-language-form;
     margin-right: $space-base;
   }
 }
