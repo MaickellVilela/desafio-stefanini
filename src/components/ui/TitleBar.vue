@@ -16,12 +16,14 @@ export default {
       window.history.length > 1
         ? this.$router.go(-1)
         : this.$router.push('/')
+    },
+    setHeaderHeight () {
+      let titleBarHeight = this.$refs.titleBar.clientHeight + 'px'
+      document.documentElement.style.setProperty('--header-height', titleBarHeight)
     }
   },
   mounted: function () {
-    let titleBarHeight = this.$refs.titleBar.clientHeight + 'px'
-    document.documentElement.style.setProperty('--header-height', titleBarHeight)
-    console.log(document.documentElement.style.getPropertyValue('--header-height'))
+    this.setHeaderHeight()
   }
 }
 </script>
