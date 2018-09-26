@@ -4,10 +4,13 @@
             <span class="progress-bar__fill" :style="`width: ` + value + `%`"></span>
         </div>
         <div class="progress-bar__text">{{text}}</div>
-        <div class="progress-bar__accessory"><span class="gost-tag">Uso contínuo</span></div>
+        <div class="progress-bar__accessory">
+          <slot name="accessory"></slot>
+        </div>
     </div>
 </template>
 <script>
+
 export default {
   name: 'progress-bar',
   props: {
@@ -43,25 +46,11 @@ export default {
             left: 0;
         }
         &__text {
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-            font-size: 14px;
-            color: rgba(0, 0, 0, 0.6);
+            @extend %typo-progress-bar-text;
         }
         &__accessory {
             margin-left: auto;
         }
     }
 
-    .gost-tag {
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: bold;
-        line-height: normal;
-        font-size: 14px;
-        text-align: right;
-        color: rgba(0, 0, 0, 0.4);
-    }
 </style>

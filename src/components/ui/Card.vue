@@ -20,12 +20,12 @@ export default {
 .card {
     display: flex;
     flex-wrap: wrap;
-    border-radius: $border-radius-small;
+    justify-content: space-between;
     margin-bottom: $space-base;
     padding: $space-base/2;
+    border-radius: $border-radius-small;
     background-color: $light-bg;
     box-shadow: $card-shadow;
-    justify-content: space-between;
     &__header {
         margin-bottom: calc-rem(10px);
     }
