@@ -1,19 +1,15 @@
 <template>
     <card :title="data.name" :subtitle="data.posology">
-        <compact-data label="Próxima dose às" :value="data.nextDoseTime"/>
+        <compact-data label="Próxima dose às" :value="data.nextDoseTime"></compact-data>
       <progress-bar :value="data.remainDosesPercentage" :text="`restam ` + data.remainDoses + ` doses`">
         <template slot="accessory"><ghost-tag text="Uso contínuo"></ghost-tag></template>
       </progress-bar>
     </card>
 </template>
 <script>
-import Card from '@/components/ui/Card'
-import CompactData from '@/components/ui/CompactData'
-import ProgressBar from '@/components/ui/ProgressBar'
 
 export default {
   name: 'medication-card',
-  components: {Card, CompactData, ProgressBar},
   props: {
     data: Object
   }
