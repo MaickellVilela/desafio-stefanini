@@ -55,63 +55,52 @@ export default {
 </script>
 
 <style lang="scss" rel="stylesheet/scss">
-$drpdown-min-size: 44px;
+$dropdown-min-size: 44px;
+$dropdown-padding: $space-base/2;
   .dropdown {
-    position: relative;
-    min-width: $drpdown-min-size;
-    height: $drpdown-min-size;
-    display: inline-block;
-    vertical-align: middle;
-    border: 2px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
-    border-radius: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
-    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    min-width: $dropdown-min-size;
+    height: $dropdown-min-size;
+    padding-left: $dropdown-padding;
+    padding-right: $dropdown-padding;
     margin-right: $space-base;
     margin-bottom: $space-base;
+    border: calc-rem(2px) solid rgba(white, 0.3);
+    border-radius: $border-radius-small;
+    cursor: pointer;
     a {
       text-decoration: none;
     }
   }
   .dropdown-toggle {
-    color: #fff;
     box-sizing: border-box;
-    line-height: 36px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    color: #FFFFFF;
-    text-align: center;
     display: block;
+    @extend %typo-natural-language-form;
+    text-align: center;
   }
   .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 1000;
-    float: left;
-    min-width: $drpdown-min-size;
-    padding: 5px 0;
-    margin: 2px 0 0;
+    min-width: $dropdown-min-size;
+    padding: calc-rem(5px) 0;
+    margin: calc-rem(2px) 0 0;
     list-style: none;
-    font-size: 14px;
-    text-align: left;
-    background-color: #fff;
+    background-color: $light-bg;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: $border-radius-small;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-    background-clip: padding-box;
   }
 
   .dropdown-menu > li > a {
     padding: 10px 30px;
     display: block;
-    clear: both;
-    font-weight: normal;
+    @extend %typo-compact-data-value;
+    color: rgba(black, 0.6);
     line-height: 1.6;
-    color: #333333;
     white-space: nowrap;
     text-decoration: none;
   }
@@ -125,21 +114,6 @@ $drpdown-min-size: 44px;
     width: 100%;
     position: relative;
     margin: 0;
-  }
-
-  .caret {
-    display: relative;
-    width: 0;
-    position: relative;
-    top: 10px;
-    height: 0;
-    margin-left: 2px;
-    vertical-align: middle;
-    border-top: 4px dashed;
-    border-top: 4px solid \9;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    float: right;
   }
 
   li {

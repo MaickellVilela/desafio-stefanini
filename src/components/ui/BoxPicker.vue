@@ -66,7 +66,6 @@ export default {
     }
     &__item {
       flex-basis: calc((100% / 3) - #{$space-base});
-      float: left;
       padding-left: $space-base;
       margin-bottom: $space-base;
       &__label {
@@ -89,7 +88,7 @@ export default {
             padding-top: 45%;
             top: 0;
             left: 50%;
-            transform: translateX(-50%) translateY(calc(-100% - #{$space-base/2}));
+            transform: translateX(-50%) translateY(calc(-100% - #{$space-base}));
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center center;
