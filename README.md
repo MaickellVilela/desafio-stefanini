@@ -1,21 +1,47 @@
 # desafio_stefanini
 
-> Implementação da solução proposta ao desafio do processo de seleção como Designer Frontend da Stefanini
+>
 
-## Build Setup
+## :iphone: Visual ( UI )
+
+Aqui estão as considerações sobre o fluxo atual e também a minha proposta para incluir um lembrete de medicação.
+
+[![abrir protótipo no figma](https://github.com/MaickellVilela/desafio-stefanini/blob/master/src/styles/presentation/abrir-figma.png?raw=true)](https://www.figma.com/file/W2bBzW6fzOMzJ7EhJOjRCZ/Prova-T%C3%A9cnica-Maickell-Vilela-Designer-Front?node-id=0%3A1)
+
+> Clique na imagem ou aqui no [link para o Protótipo](https://www.figma.com/file/W2bBzW6fzOMzJ7EhJOjRCZ/Prova-T%C3%A9cnica-Maickell-Vilela-Designer-Front?node-id=0%3A1)
+
+
+## Código
+
+[![Live Preview](https://github.com/MaickellVilela/desafio-stefanini/blob/master/src/styles/presentation/live-preview.png?raw=true)](https://lembrete-medicamento.netlify.com/#/add/type)
+
+> Clique na imagem ou aqui no [link para o live preview](https://lembrete-medicamento.netlify.com/#/add/type)
+
+### Rodar localmente
 
 ``` bash
-# install dependencies
+# instalar dependências
 npm install
 
-# serve with hot reload at localhost:8080
+# rodar servidor local de desenvolvimento
 npm run dev
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+# entrar em
+http://localhost:8080/
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Gerar arquivos para produção
+``` bash
+# build para produção
+npm run build
+
+# assim é possível ver os arquivos gerados, porém eles
+# devem ser disponibilizados num servidor http.
+# Abrir o index.html não vai funcionar.
+```
+
+É isso aí! Espero que tenha cumprido as espectativas.
+Aguardo contato de vocês para a próxima etapa da seleção.
+## :beer: Grande abraço. Obrigado pela oportunidade. :beers:
+
+![](https://media.giphy.com/media/l0MYHCPKJ9H2VmRyg/giphy.gif)
