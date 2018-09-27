@@ -44,4 +44,4 @@ npm run build
 Aguardo contato de vocês para a próxima etapa da seleção.
 ## :beer: Grande abraço. Obrigado pela oportunidade. :beers:
 
-![](https://media.giphy.com/media/l0MYHCPKJ9H2VmRyg/giphy.gif)
+![](https://media2.giphy.com/media/xUOwG5OrxodrOVtug0/giphy.gif)
