@@ -1,8 +1,9 @@
 <template>
-    <div class="text-field" :class="{'text-field--disabled': isDisabled}">
-        <label class="text-field__label" for="name">{{labelText}}</label>
-        <input class="text-field__input" type="text" id="name" :disabled="isDisabled" :value="value">
-    </div>
+  <div class="text-field" :class="{'text-field--disabled': isDisabled}">
+    <label class="text-field__label" for="name">{{labelText}}</label>
+    <input class="text-field__input" type="text" id="name" :disabled="isDisabled" :value="value">
+    <help-text v-if="helpText !== ''">{{helpText}}</help-text>
+  </div>
 </template>
 <script>
 export default {
@@ -16,7 +17,8 @@ export default {
     value: {
       type: String,
       default: ''
-    }
+    },
+    helpText: String
   }
 }
 </script>
